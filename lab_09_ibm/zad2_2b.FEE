@@ -1,0 +1,92 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  100
+[LengthUnits] =  millimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 1
+  <BeginBdry>
+    <BdryName> = "d"
+    <BdryType> = 0
+    <Vs> = 0
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+[BlockProps]  = 3
+  <BeginBlock>
+    <BlockName> = "eps1"
+    <ex> = 2
+    <ey> = 2
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "eps2"
+    <ex> = 3
+    <ey> = 3
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "eps0"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 2
+  <BeginConductor>
+    <ConductorName> = "gora"
+    <Vc> = 100
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "dol"
+    <Vc> = -10
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+[NumPoints] = 16
+0	0	0	0	0
+100	0	0	0	0
+100	1	0	0	0
+0	1	0	0	0
+100	4	0	0	0
+0	4	0	0	0
+50	0	0	0	0
+50	4	0	0	0
+20	0	0	0	0
+20	4	0	0	0
+80	4	0	0	0
+80	0	0	0	0
+-20	40	0	0	0
+-20	-40	0	0	0
+120	40	0	0	0
+120	-40	0	0	0
+[NumSegments] = 17
+5	3	-1	0	0	0	0
+2	1	-1	0	0	0	0
+4	2	-1	0	0	0	0
+3	0	-1	0	0	0	0
+5	9	-1	0	0	0	1
+4	10	-1	0	0	0	1
+1	11	-1	0	0	0	2
+0	8	-1	0	0	0	2
+7	6	-1	0	0	0	0
+8	6	-1	0	0	0	2
+9	7	-1	0	0	0	1
+10	7	-1	0	0	0	1
+11	6	-1	0	0	0	2
+12	13	-1	1	0	0	0
+13	15	-1	1	0	0	0
+15	14	-1	1	0	0	0
+14	12	-1	1	0	0	0
+[NumArcSegments] = 0
+[NumHoles] = 0
+[NumBlockLabels] = 3
+10	23	3	-1	0	0
+32	3	1	-1	0	0
+76	2	2	-1	0	0

@@ -1,0 +1,84 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  1
+[DoSmartMesh] =  1
+[Depth]       =  100
+[LengthUnits] =  millimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 2
+  <BeginBdry>
+    <BdryName> = "G"
+    <BdryType> = 0
+    <Vs> = 100
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "D"
+    <BdryType> = 0
+    <Vs> = -10
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+[BlockProps]  = 3
+  <BeginBlock>
+    <BlockName> = "Air"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "diel_2"
+    <ex> = 2
+    <ey> = 2
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "diel_3"
+    <ex> = 3
+    <ey> = 3
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 0
+[NumPoints] = 14
+-50	0	0	0	0
+50	0	0	0	0
+50	1	0	0	0
+50	4	0	0	0
+-50	1	0	0	0
+-50	4	0	0	0
+-65	32.5	0	0	0
+-65	-12.5	0	0	0
+55	-15	0	0	0
+55	32.5	0	0	0
+-65	-15	0	0	0
+0	0	0	0	0
+0	1	0	0	0
+0	4	0	0	0
+[NumSegments] = 15
+3	2	-1	0	0	0	0
+0	4	-1	0	0	0	0
+5	4	-1	0	0	0	0
+6	7	-1	2	0	0	0
+9	6	-1	2	0	0	0
+7	10	-1	2	0	0	0
+10	8	-1	2	0	0	0
+9	8	-1	2	0	0	0
+2	1	-1	0	0	0	0
+5	13	-1	1	0	0	0
+13	3	-1	1	0	0	0
+2	12	-1	0	0	0	0
+12	4	-1	0	0	0	0
+0	11	-1	2	0	0	0
+11	1	-1	2	0	0	0
+[NumArcSegments] = 0
+[NumHoles] = 0
+[NumBlockLabels] = 3
+45	25	1	-1	0	0
+30	2.5	2	-1	0	0
+-41.799999999999997	0.29999999999999999	3	-1	0	0
